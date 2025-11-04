@@ -19,12 +19,12 @@ Every ~4 years Bitcoin cuts its block reward in half (“halving”). People say
 - **Heavy tails / outliers.** Work with log-prices , report median/IQR alongside mean/variance, show sensitivity with and without extremes.
 - **Autocorrelation / heteroskedasticity.** Treat the basic tests as descriptive, not causal. Add bootstrap CIs or use returns as a robustness check.
 - **Window choice.** Report results for and ±365 days and put them side by side.
-- **Data quirks.** Careful date parsing, numeric coercion, and an audit log of rows dropped or fixed so nothing is “magic.”
+- **Data quirks.** Careful date parsing, numeric coercion, and an audit log of rows dropped or fixed so nothing is out of the hat.
 
 ## Success criteria
 - **Reproducible:** one command rebuilds everything from the raw Excel.
 - **Correct:** a few unit tests pass (e.g., CI math, window slicing); spot checks match manual calculations.
-- **Clear:** figures are labeled and assumptions and limits are written down, the repo has a short README.
+- **Clear:** figures are labeled and assumptions and limits are written down.
 - **Findings:** at least one halving window shows a statistically significant difference (α=0.05) in mean and/or variance, and the direction is consistent across the two window sizes.
 
 ## Stretch goals
